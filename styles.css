@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-image: linear-gradient(to bottom, #fff, #f0f1ff);
+  padding-top: 1.6rem;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+header img {
+  width: 7.9rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+header button {
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 28px;
+  background-color: #13183f;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 6.4rem;
+}
+
+.hero {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4.8rem;
+  margin-bottom: 6.4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #13183f;
+}
+
+.hero-text p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #83869a;
+  margin-top: 2.4rem;
+}
+
+.hero-text button {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 28px;
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 32.7rem;
+  height: 30.1rem;
+  object-fit: contain;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6rem;
+  padding: 0 2rem;
+  margin-top: 6.4rem;
+}
+
+h2 {
+  padding: 3.2rem;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 6.4rem 3.2rem 4rem;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+  background-color: #fff;
+  position: relative;
+}
+
+.content img {
+  width: 56px;
+  height: 56px;
+  gap: 8px;
+  padding: 0;
+  border-radius: 999px;
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  position: absolute;
+  top: -3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #13183f;
+}
+
+.content p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #83869a;
+  margin-top: 2.4rem;
+}
+
+.content span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f74780;
+  margin-top: 2.4rem;
+  cursor: pointer;
+}
+
+.content span:hover {
+  opacity: 0.6;
+}
+
+.content span:active {
+  opacity: 0.4;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-top: 8rem;
+  background-color: #13183f;
+  background-size: cover;
+  min-height: 10rem;
+  min-width: 100%;
+}
+
+footer img {
+  width: 7.9rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+footer button {
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  margin: 2.4rem 2rem;
+  border-radius: 28px;
+  background-image: linear-gradient(to bottom, #4851ff, #f02aa6);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 48rem) {
+  body {
+    padding-top: 2.4rem;
+    overflow-x: hidden;
+    min-width: 108rem;
+    max-width: 108rem;
+  }
+
+  header {
+    padding: 0 17.8rem;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 0 4.4rem;
+    flex-direction: row;
+    gap: 4rem;
+    position: relative;
+    max-width: 50rem;
+  }
+
+  .hero-img {
+    content: url(./assets/image-hero-tablet.png);
+    width: 70.7rem;
+    height: 56rem;
+    position: absolute;
+    top: -52%;
+    left: 105%;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-rows: 35rem 35rem;
+    grid-template-columns: repeat(2, 35rem);
+    padding: 0 4.4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .design {
+    width: 35rem;
+    height: 31.5rem;
+  }
+
+  .head-cont {
+    width: 35rem;
+    height: 30.5rem;
+    box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+    background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+    background-size: cover;
+    border-radius: 12px;
+  }
+
+  h2 {
+    padding: 6.4rem 3.2rem;
+    border-radius: unset;
+    box-shadow: unset;
+    background-image: unset;
+  }
+
+  .content p {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    padding: 0 17.5rem;
+    margin-top: 14.4rem;
+    max-width: 108rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  body {
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 0 16rem;
+    max-width: 150rem;
+  }
+
+  main {
+    margin-top: 17.4rem;
+  }
+
+  .hero {
+    padding: 0 16rem;
+    gap: 3.2rem;
+    max-width: 90rem;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+  }
+
+  .hero-img {
+    content: url(./assets/image-hero-desktop.webp);
+    width: 80.7rem;
+    height: 60rem;
+    object-fit: cover;
+    position: absolute;
+    top: -65%;
+    left: 99%;
+  }
+
+  .content-section {
+    gap: 3.2rem;
+    padding: 0 16rem;
+    margin-top: 12.8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .head-cont,
+  .design {
+    height: 31.5rem;
+  }
+
+  .content-section {
+    grid-template-rows: 35rem 35rem;
+    grid-template-columns: repeat(3, 35rem);
+    padding: 0 16rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  footer {
+    padding: 0 16rem;
+    max-width: unset;
+  }
+
+  footer button {
+    padding: 1.2rem 3.2rem;
+  }
+}
